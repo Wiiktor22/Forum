@@ -1,1 +1,14 @@
-$font-color: red;
+@import url('https://fonts.googleapis.com/css?family=Domine|Oxygen&display=swap');
+
+$fonts: (standard: 'Oxygen', second: 'Domine');
+$main-color: #d6cbbc;
+$dark-gray: #474747;
+
+$breakpoints: (
+    xs: 375px,
+    s: 410px,
+    m: 768px,
+    l: 1024px,
+    xl: 1366px,
+    xxl: 1600px
+)

@@ -1,0 +1,84 @@
+.nav {
+    position: absolute;
+    top: 0;
+    right: -110vw;
+    height: 100vh;
+    width: 100%;
+    background-color: $dark-gray;
+    transition: 0.8s;
+    &--active {
+        right: 0;
+    }
+    &__container {
+        @include flex (column, center, center);
+        height: 100vh;
+        width: 100%;
+        list-style: none;
+        @media (min-width: map-get($map: $breakpoints, $key: l)) {
+            @include flex(row, center, center);
+            height: 8vh;
+            width: 30%;
+            margin: 0;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: xl)){
+            width: 45%;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: xxl)) {
+            width: 75%;
+        }
+    }
+    &__element {
+        padding-bottom: 5vh;
+        &:nth-last-of-type(1) {
+            padding-bottom: 0;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: l)) {
+            padding-bottom: 0;
+            padding-right: 5vw;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: xl)){
+            padding-right: 4vw;
+        }
+    }
+    &__href {
+        color: $main-color;
+        text-decoration: none;
+        font-size: 2.8rem;
+        @media (min-width: map-get($map: $breakpoints, $key: xs)) and (orientation: portrait){
+            font-size: 3rem;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: m)) and (orientation: portrait){
+            font-size: 4rem;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: l)) {
+            font-size: 2rem;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: xl)){
+            font-size: 2.4rem;
+        }
+        &:after {
+            content: '';
+	        display: block;
+	        margin: auto;
+	        height: 3px;
+	        width: 0px;
+	        background: transparent;
+	        transition: width .5s ease, background-color .5s ease;
+        }
+        &:hover:after {
+            width: 100%;
+            background: $main-color;
+        }
+    }
+    @media (min-width: map-get($map: $breakpoints, $key: l)) {
+        position: absolute;
+        top: .6vh;
+        right: 0;
+        height: 8vh;
+        width: 30%;
+        background-color: transparent;
+    }
+    @media (min-width: map-get($map: $breakpoints, $key: xl)) {
+        top: 1.5vh;
+    }
+}

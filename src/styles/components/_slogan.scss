@@ -1,0 +1,24 @@
+.slogan {
+    width: 70vw;
+    color: $main-color;
+    &__medium {
+        @include flex(column, flex-start, flex-start)
+    }
+    &__text {
+        padding: 0 1vw;
+        background-color: $dark-gray;
+        font-size: 3.8rem;
+        @media (min-width: map-get($map: $breakpoints, $key: s)) and (orientation: portrait){
+            font-size: 4rem;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: m)) and (orientation: portrait){
+            font-size: 5rem;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: l)) {
+            font-size: 4.5rem;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: xxl)) {
+            font-size: 5.5rem;
+        }
+    }
+}

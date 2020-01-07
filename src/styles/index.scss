@@ -2,9 +2,23 @@
 @import "./utilities/reset";
 @import "./utilities/variables";
 @import "./utilities/mixins";
+@import "./utilities/animations";
+
+// Components
+@import "./components/burger";
+@import "./components/slogan";
 
 // Layout
 @import "./layout/header";
+@import "./layout/nav";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: map-get($map: $fonts, $key: standard);
+}
 
 .wrapper {
   max-width: 1200px;

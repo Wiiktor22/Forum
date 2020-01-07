@@ -1,0 +1,27 @@
+// Burger animation
+@keyframes changeFirstBurgerToX {
+    from {
+        transform: rotate(0) translate(0, 0);
+    }
+    to {
+        transform: rotate(-45deg) translate(-10px, 7px);
+    }
+}
+
+@keyframes changeThirdBurgerToX {
+    from {
+        transform: rotate(0) translate(0, 0);
+    }
+    to {
+        transform: rotate(45deg) translate(-5px, -3px);
+    }
+}
+
+@keyframes borderBottom {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
