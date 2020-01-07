@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: 20% center;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     &__logo {
         position: absolute;
