@@ -1,0 +1,52 @@
+.section-events {
+    width: 100%;
+    height: auto;
+    padding: 5vh 10vw;
+    background-color: $main-color;
+    color: $dark-gray;
+    &__text {
+        font-size: 1.4rem;
+        @media (min-width: map-get($map: $breakpoints, $key: m)) {
+            font-size: 1.7rem;
+        }
+    }
+    &__button {
+        margin: 3vh auto 0;
+        &:hover {
+            background-color: $dark-gray;
+            color: $main-color;
+            cursor: pointer;
+        }
+    }
+    &__photo-container {
+        display: none;
+        @media (min-width: map-get($map: $breakpoints, $key: l)){
+            display: block;
+        }
+    }
+    &__photo {
+        width: 30vw;
+        height: 48vh;
+        @media (min-width: map-get($map: $breakpoints, $key: l)){
+            width: 25vw;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: xxl)){
+            height: 55vh;
+        }
+    }
+    &__container {
+        @media (min-width: map-get($map: $breakpoints, $key: l)){
+            width: 30vw;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: l)){
+            width: 35vw;
+        }
+    }
+    @media (min-width: map-get($map: $breakpoints, $key: l)){
+        padding: 7vh 12vw;
+        @include flex(row, space-around);
+    }
+    @media (min-width: map-get($map: $breakpoints, $key: xl)){
+        padding: 10vh 15vw;
+    }
+}

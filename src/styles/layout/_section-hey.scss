@@ -4,14 +4,6 @@
     padding: 5vh 10vw;
     background-color: $main-color;
     color: $dark-gray;
-    &__welcome {
-        font-family: map-get($map: $fonts, $key: second);
-        font-size: 3.5rem;
-        padding-bottom: 1.5vh;
-        @media (min-width: map-get($map: $breakpoints, $key: m)) {
-            font-size: 4.3rem;
-        }
-    }
     &__text {
         font-size: 1.4rem;
         @media (min-width: map-get($map: $breakpoints, $key: m)) {

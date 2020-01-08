@@ -1,0 +1,11 @@
+.button {
+    border: 1.5px solid $dark-gray;
+    background-color: $main-color;
+    color: $dark-gray;
+    font-family: map-get($map: $fonts, $key: second);
+    font-size: 1.5rem;
+    padding: 1vh 4vw;
+    @media (min-width: map-get($map: $breakpoints, $key: m)) and (orientation: portrait){
+        font-size: 1.8rem;
+    }
+}

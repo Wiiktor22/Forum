@@ -7,11 +7,14 @@
 // Components
 @import "./components/burger";
 @import "./components/slogan";
+@import "./components/button";
 
 // Layout
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/section-hey";
+@import "./layout/section-events";
+@import "./layout/banner";
 
 html {
   font-size: 10px;

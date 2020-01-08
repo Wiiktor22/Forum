@@ -22,3 +22,12 @@
         }
     }
 }
+
+.section--header {
+    font-family: map-get($map: $fonts, $key: second);
+    font-size: 3.5rem;
+    padding-bottom: 1.5vh;
+    @media (min-width: map-get($map: $breakpoints, $key: m)) {
+        font-size: 4.3rem;
+    }
+}
