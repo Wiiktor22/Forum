@@ -15,6 +15,7 @@
 @import "./layout/section-hey";
 @import "./layout/section-events";
 @import "./layout/banner";
+@import "./layout/section-restaurants";
 
 html {
   font-size: 10px;
@@ -23,6 +24,7 @@ html {
 body {
   font-family: map-get($map: $fonts, $key: standard);
   overflow-x: hidden;
+  background-color: $main-color;
 }
 
 .wrapper {

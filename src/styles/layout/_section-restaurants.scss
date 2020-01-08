@@ -1,0 +1,70 @@
+.section-restaurants {
+    background-image: url('../img/our-restaurant.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    height: 70vh;
+    color: $dark-gray;
+    padding: 5vh 10vw;
+    &__text {
+        font-size: 1.4rem;
+        @media (min-width: map-get($map: $breakpoints, $key: m)) {
+            font-size: 1.7rem;
+        }
+    }
+    &__button {
+        margin: 3vh auto 0;
+        background-color: $dark-gray;
+        color: $main-color;
+        &:hover {
+            background-color: $main-color;
+            color: $dark-gray;
+            cursor: pointer;
+            @media (min-width: map-get($map: $breakpoints, $key: l)) {
+                background-color: $dark-gray;
+                color: $main-color;
+            }
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: l)) {
+            background-color: $main-color;
+            color: $dark-gray;
+        }
+    }
+    &__photo-container {
+        display: none;
+        @media (min-width: map-get($map: $breakpoints, $key: l)){
+            display: block;
+        }
+    }
+    &__photo {
+        width: 30vw;
+        height: 40vh;
+        @media (min-width: map-get($map: $breakpoints, $key: l)){
+            width: 25vw;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: xxl)){
+            height: 45vh;
+            width: 20vw;
+        }
+    }
+    &__container {
+        @media (min-width: map-get($map: $breakpoints, $key: l)){
+            width: 35vw;
+        }
+        @media (min-width: map-get($map: $breakpoints, $key: xxl)){
+            width: 40vw;
+        }
+    }
+    @media (min-width: map-get($map: $breakpoints, $key: m)) {
+        height: 50vh;
+    }
+    @media (min-width: map-get($map: $breakpoints, $key: l)){
+        padding: 7vh 12vw;
+        @include flex(row, space-around);
+        background-image: none;
+        background-color: $main-color;
+    }
+    @media (min-width: map-get($map: $breakpoints, $key: xl)){
+        padding: 10vh 15vw;
+    }
+}
