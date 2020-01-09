@@ -9,3 +9,13 @@
         font-size: 1.8rem;
     }
 }
+
+.input {
+    border: 1px solid $dark-gray;
+    font-family: map-get($map: $fonts, $key: second);
+    color: $dark-gray;
+    background-color: #f7f5f2;
+    &:focus {
+        outline: none;
+    }
+}
