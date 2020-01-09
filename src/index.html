@@ -7,7 +7,7 @@
   <title>Forum - restaurant</title>
 </head>
 <body>
-  <header class="header">
+  <header id="home" class="header">
     <h1 class="header__logo">Forum</h1>
     <div class="header__burger burger burger--non-active">
       <div class="burger__element"></div>
@@ -24,10 +24,10 @@
   </header>
   <nav class="nav">
     <ul class="nav__container">
-      <li class="nav__element"><a href="" class="nav__href">Home</a></li>
-      <li class="nav__element"><a href="" class="nav__href">Events</a></li>
-      <li class="nav__element"><a href="" class="nav__href">Restaurants</a></li>
-      <li class="nav__element"><a href="" class="nav__href">Reservation</a></li>
+      <li class="nav__element"><a data-scroll href="#home" class="nav__href">Home</a></li>
+      <li class="nav__element"><a data-scroll href="#events" class="nav__href">Events</a></li>
+      <li class="nav__element"><a data-scroll href="#restaurant" class="nav__href">Restaurants</a></li>
+      <li class="nav__element"><a data-scroll href="#reservation" class="nav__href">Reservation</a></li>
     </ul>
   </nav>
   <section class="section-hey">
@@ -37,7 +37,7 @@
   <section class="banner">
     <img class="banner__photo" src="img/banner1.jpg" alt="Forum Pizza">
   </section>
-  <section class="section-events">
+  <section id="events" class="section-events">
     <div class="section-events__container">
       <h4 class="section-events__header section--header">Events</h4>
       <p class="section-events__text">
@@ -49,7 +49,7 @@
       <img class="section-events__photo"src="img/events.jpg" alt="Forum Pizza">
     </div>
   </section>
-  <section class="section-restaurants">
+  <section id="restaurant" class="section-restaurants">
     <div class="section-restaurants__container">
       <h4 class="section-restaurants__header section--header">Our Restaurants</h4>
       <p class="section-restaurants__text">We have a few restaurants in Poland, each with its own special dishes!</p>
@@ -59,7 +59,7 @@
       <img class="section-restaurants__photo"src="img/our-restaurant.jpg" alt="Forum Pizza">
     </div>
   </section>
-  <section class="section-reservation">
+  <section id="reservation" class="section-reservation">
     <div class="section-reservation__container">
       <h4 class="section-reservation__header section--header">Reservation</h4>
       <p class="section-reservation__text">Book your table, we will call you back as soon as possible!</p>
@@ -112,6 +112,8 @@
         <a href="https://github.com/Wiiktor22/Forum" class="footer__href" target="_blank" title="Wiiktor22 - GitHub">GitHub</a>
     </div>
   </footer>
+  <button class="scroll--button">A</button>
   <script src="https://kit.fontawesome.com/4143479d8f.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 </body>
 </html>

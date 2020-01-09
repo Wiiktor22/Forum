@@ -19,3 +19,18 @@
         outline: none;
     }
 }
+
+.scroll--button {
+    position: fixed;
+    bottom: 4vh;
+    right: 6vw;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba($color: $dark-gray, $alpha: 0.75);
+    color: $main-color;
+    &:focus {
+        outline: none;
+    }
+}
