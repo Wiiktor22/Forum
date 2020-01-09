@@ -27,6 +27,7 @@ body {
   font-family: map-get($map: $fonts, $key: standard);
   overflow-x: hidden;
   background-color: $main-color;
+  @include flex(column, flex-start);
 }
 
 .wrapper {
