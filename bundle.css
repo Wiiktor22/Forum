@@ -156,12 +156,21 @@
   width: 30px;
   border: none;
   border-radius: 3px;
+  opacity: 0;
   background-color: rgba(71,71,71,0.75);
   color: #d6cbbc;
+  cursor: pointer;
 }
 
 .scroll--button:focus {
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .scroll--button {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .header {
