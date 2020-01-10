@@ -1,6 +1,4 @@
 import '../styles/index.scss';
-// const ghpages = require('gh-pages');
-// ghpages.publish('build', function(err) {});
 
 //Scroller
 const scroll = new SmoothScroll('a[href*="#"]', {
