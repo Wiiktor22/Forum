@@ -2,9 +2,11 @@
   "name": "forum-restaurant",
   "version": "0.1.0",
   "description": "Website template created by me for restaurant",
+  "homepage": "https://wiiktor22.github.io/Forum/",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "cross-env": "^6.0.3",
     "css-loader": "^3.4.1",
     "file-loader": "^4.3.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.0.0-beta.11",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
