@@ -30,7 +30,12 @@
     border-radius: 3px;
     background-color: rgba($color: $dark-gray, $alpha: 0.75);
     color: $main-color;
+    cursor: pointer;
     &:focus {
         outline: none;
+    }
+    @media (min-width: map-get($map: $breakpoints, $key: m)) {
+        height: 40px;
+        width: 40px;
     }
 }
